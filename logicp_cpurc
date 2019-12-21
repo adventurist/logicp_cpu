@@ -43,6 +43,7 @@ minimum_size 0 0
 TEXT
 ${voffset 20}
 Happening
+${font Monoid Nerd Font Mono:size=9}{$color}${exec curl "wttr.in/Ottawa?0Tq"}
 ${offset 120}${color1}${cpugraph 40,183 666666 666666}}${voffset -25}
 
 ${font Monoid Nerd Font Mono:size=11}${color}CPU ${goto 38}1:${color1} ${goto 57}${font Monoid Nerd Font Mono:size=9}${execi 30 sensors | grep 'Core 0:' | cut -c16-17}°C ${goto 96}${color2}${cpubar cpu1}  ${alignr}${color1}${freq_g 1} GHz
